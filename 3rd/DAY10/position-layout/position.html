@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>CSS Position Layout</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .parent {
+      /*text-align: center;*/
+      width: 400px;
+      height: 400px;
+      background-color: #777;
+    }
+
+    /*.child {
+      width: 200px;
+      height: 200px;
+      padding-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #ddd;
+    }*/
+
+    .parent img {
+      /* static: 정적인 */
+      /* relative: 상대적인 ???: 자기 자신의 원래 위치에서 상대적인 이동 */
+      position: relative;
+      top: -100px;
+      right: -100px;
+    }
+
+    .target-img {
+      position: relative;
+      top: 200px;
+      left: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <img class="target-img" src="../images/row-02/mask_deco.jpg" alt="" width="240" height="240">
+
+  <!-- <div class="parent"> -->
+    <!-- <img src="../images/row-02/mask_deco.jpg" alt="" width="240" height="240"> -->
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, doloremque.</p> -->
+    <!-- <div class="child"></div>
+  </div> -->
+
+</body>
+</html>

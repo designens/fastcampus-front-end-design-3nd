@@ -1,0 +1,66 @@
+/*! CSS Linear Grdient -
+Draw Grid System 960, 12, 80 Â© yamoo9.net, 2016 */
+
+body { margin: 0; }
+
+/**
+ * --------------------------------
+ * show-grid Module
+ * ----------------------------- */
+.show-grid {
+  min-height: 100vh;
+  background: linear-gradient(transparent 90%, #7045cf 90%);
+  background-size: 1px 10px;
+}
+
+/**
+ * --------------------------------
+ * grid-container Module
+ * ----------------------------- */
+.grid-container {
+  width: 960px;
+  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.show-grid .grid-container {
+  background: linear-gradient(90deg, rgba(254, 167, 62, 0.4) 50%, rgba(23, 126, 111, 0.43) 50%);
+  /* (960 / 12) = 80 * 2 = 160 */
+  background-size: 160px 1px;
+}
+
+/**
+ * --------------------------------
+ * Columns Module
+ * ----------------------------- */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+}
+
+.col-1  { width: 80px;  }
+.col-2  { width: 160px; }
+.col-3  { width: 240px; }
+.col-4  { width: 320px; }
+.col-5  { width: 400px; }
+.col-6  { width: 480px; }
+.col-7  { width: 560px; }
+.col-8  { width: 640px; }
+.col-9  { width: 720px; }
+.col-10 { width: 800px; }
+.col-11 { width: 880px; }
+.col-12 { width: 960px; }
+
+/**
+ * --------------------------------
+ * Row Module
+ * ----------------------------- */
+/* ê°€ìƒ ìš”ì†Œ ìƒì„± */
+/* float í•´ì œ ëª©ì ìœ¼ë¡œ clear: bothë¥¼ ì„¤ì • */
+/* clearê°€ ì ìš©ë˜ê¸° ìœ„í•´ì„œëŠ” blockìš”ì†Œ ì—¬ì•¼ í•œë‹¤. */
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}

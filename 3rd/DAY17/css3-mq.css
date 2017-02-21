@@ -1,0 +1,58 @@
+/*! CSS3 Media Quries © yamoo9.net, 2016 */
+html {
+  font-size: 10px;
+}
+
+/* MOBILE FIRST */
+
+body {
+  margin: 0;
+  /*background: #000;*/
+  /*color: #fff;*/
+  font-size: 2rem;
+  /*transition: font-size 1s ease-out;*/
+}
+
+.show-grid {
+  position: relative;
+}
+
+.show-grid::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  font-size: 10rem;
+  content: '';
+  background: linear-gradient(
+    90deg,
+    hsla(23, 78%, 54%, 0.3) 50%,
+    hsla(23, 78%, 54%, 0.5) 50%
+  );
+  background-size: 50% 1px;
+}
+
+@media screen and (min-width: 540px) {
+  body {
+    /*background: #f00;*/
+    /*color: #000;*/
+    font-size: 1.7rem;
+  }
+  .show-grid::before {
+    background: linear-gradient(90deg, hsla(23, 78%, 54%, 0.3) 50%, hsla(23, 78%, 54%, 0.5) 50%);
+    background-size: 25% 1px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  body {
+    /*background: #ff0;*/
+    /*color: #7045cf;*/
+    font-size: 1.2rem;
+  }
+  .show-grid::before {
+    background: linear-gradient(90deg, hsla(23, 78%, 54%, 0.3) 50%, hsla(23, 78%, 54%, 0.5) 50%);
+    background-size: 16.6666% 1px;
+  }
+}

@@ -1,0 +1,60 @@
+/**
+ * --------------------------------
+ * Fluid Image
+ * ----------------------------- */
+
+/**
+ * --------------------------------
+ * Content Image: <img>
+ * ----------------------------- */
+.rwd-image {
+  width: 100%;
+  height: auto;
+}
+
+/**
+ * --------------------------------
+ * Background Image
+ * ----------------------------- */
+.rwd-bg {
+  width: 100%;
+  background-size: cover;
+}
+
+/**
+ * --------------------------------
+ * RWD Crop Image
+ * ----------------------------- */
+.rwd-crop-container {
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+}
+
+.rwd-crop-content {
+  position: absolute;
+  left: 50%;
+  top: -120px;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+/**
+ * --------------------------------
+ * RWD Video
+ * ----------------------------- */
+.rwd-video-container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  max-width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.rwd-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

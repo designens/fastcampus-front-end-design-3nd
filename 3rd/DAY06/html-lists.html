@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>HTML 목록 디자인</title>
+  <link rel="stylesheet" href="css/list-design.css">
+</head>
+<body>
+
+  <!-- 비순차 목록: 순서가 중요하지 않은 목록 -->
+  <!-- <ul> unordered list -->
+  <!-- 목록(List)의 각 항목(Item) -->
+  <!-- <li> list item -->
+  <h2>웹의 대표 언어! 3대장</h2>
+  <ul class="note-list">
+    <li>HTML
+      <ul>
+        <li>HTML 4.01</li>
+        <li>XHTML
+          <ul>
+            <li>1.0</li>
+            <li>1.1</li>
+            <li>2.0</li>
+          </ul>
+        </li>
+        <li>HTML 5</li>
+        <li>HTML 5.1</li>
+      </ul>
+    </li>
+    <li>CSS
+      <ul>
+        <li>Sass</li>
+        <li>LESS</li>
+        <li>Stylus</li>
+      </ul>
+    </li>
+    <li>JavaScript</li>
+  </ul>
+
+  <!-- 순차 목록: 순서(Order)가 중요한 목록(List)  -->
+  <!-- <ol> ordered list -->
+  <h2>웹을 대표하는 3언어의 탄생 순서</h2>
+  <ol class="color-numbering">
+    <li>
+      <span>1989, HTML</span>
+      <ol>
+        <li><span>1999, HTML 4.01</span></li>
+        <li><span>1999, HTML 4.01</span></li>
+        <li><span>1999, HTML 4.01</span></li>
+        <li><span>1999, HTML 4.01</span></li>
+      </ol>
+    </li>
+    <li>
+      <span>1994, JavaScript</span>
+      <ol>
+        <li>
+          <span>2016, ECMAScript</span>
+          <ol>
+            <li><span>2020, ECMAScript Neo</span></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><span>1996, CSS</span></li>
+  </ol>
+
+  <!-- 정의 목록: 용어를 정의하는 기술 내용을 묶은 목록 -->
+  <!-- <dl> 정의 목록(Definition List) -->
+  <!-- <dt> 정의 용어(Definition Term) -->
+  <!-- <dd> 용어 기술(Definition Description) -->
+
+  <h2>웹 디자인 용어 기술</h2>
+
+  <dl>
+    <!-- 버티컬 리듬이란? -->
+    <dt lang="en">Vertical Rhythm</dt>
+    <dd>수직 방향의 타이포그래픽 또는 공간에 관한 리듬(운율) 조정(조율)</dd>
+    <!-- 그리드 시스템이란? -->
+    <dt lang="en">Grid System</dt>
+    <dd>컬럼 디자인을 효율적으로 관리하기 위한 전통적인 디자인 도구</dd>
+  </dl>
+
+</body>
+</html>

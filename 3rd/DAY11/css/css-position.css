@@ -1,0 +1,45 @@
+body {
+  margin: 3rem;
+}
+img {
+  vertical-align: top;
+}
+.image-wrapper {
+  width: 200px;
+  height: 200px;
+  background: #212021;
+  box-shadow: -2px 10px 10px 1px rgba(105, 73, 26, 0.4);
+}
+.product-hanger-chip {
+  background: #7b1828;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.product-heart-love {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #f3d300;
+}
+.product-cactus {
+  background: #426408;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.product-heart-love img {
+  position: relative;
+  top: 40px;
+  left: 17px;
+}
+.product-hanger-chip img {
+  position: relative;
+  top: 28px;
+  right: -27px;
+}
+.product-cactus img {
+  position: relative;
+  bottom: -31px;
+  left: 126px;
+}

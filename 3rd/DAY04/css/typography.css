@@ -1,0 +1,113 @@
+/* 브라우저 기본 스타일 초기화 */
+body {
+  margin: 0;
+}
+
+/* 사용자 정의 스타일 오버라이딩(덮어쓰기) */
+/* Design = 설계 */
+
+/* 본문 설계(Design)
+ * 글자 크기 16px
+ * 행간 비율 1.5
+ **/
+body {
+  font-family: "Spoqa Han Sans", Dotum, Gulim, Sans-Serif;
+  /* 글자 크기 */
+  font-size: 1em;
+  /* 글자 줄 사이 간격 */
+  line-height: 1.5; /* 24px */
+  /* 글자 사이 간격 */
+  letter-spacing: -0.04em;
+  /* 글자 색상 */
+  color: #121003;
+  /* Leading 배경 패턴 */
+  background: url("../../DAY03/images/leading-24.png");
+}
+
+/* 단락 설계 */
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+/* 제목 설계
+ * 타입 배율 x1.25
+ **/
+h6 {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  font-size: 1em;   /* 16px = 1em */
+  line-height: 1.5; /* 24px */
+  font-weight: 700;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 1.2em;
+  font-size: 1.25em; /* 1*1.25em */
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 0.96em;
+  font-size: 1.5625em; /* 1*1.25*1.25em */
+  line-height: 1.92;
+  font-weight: 200;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.768em;
+  font-size: 1.953125em; /* 1*1.25*1.25*1.25em */
+  line-height: 1.536;
+  font-weight: 200;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.6144em;
+  font-size: 2.44140625em; /* 1*1.25*1.25*1.25*1.25em */
+  line-height: 1.2288;
+  font-weight: 200;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.49152em;
+  font-size: 3.0517578125em; /* 1*1.25*1.25*1.25*1.25*1.25em */
+  line-height: 1.47456;
+  font-weight: 200;
+}
+
+/* 레이아웃 설계 */
+body {
+  width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#custom-setting {
+  /*font-size: 32px;*/
+  /*font-size: 1.7em;*/
+}
+
+/**
+ *  em 단위의 문제점
+ *  Equal M 을 말하며, 인쇄 환경에서 사용되던 단위
+ *  웹 환경에서 em을 사용하기 어려운 이유는
+ *  em은 자신(요소)을 포함하는 상위 요소에 설정된
+ *  글자 크기에 상대적이기 때문이다. 이 말인즉슨,
+ *  페이지 전체적으로 글자 크기를 고르게 유지하기 어렵다는 것을 뜻한다.
+ *  뿐만 아니라, 글자 크기가 아니 공간의 크기 또한 em 단위를
+ *  사용한다면 해당 공간의 기준이 되는 em은 자신(요소)의 글자 크기가 된다.
+ *
+ *  상위 요소(글자 크기)
+ *    하위 요소(상위요소 글자 크기에 영향을 받는다.)
+ *      공간 크기(자신(하위 요소)의 글자 크기에 영향을 받는다.)
+ *
+ *  em 단위의 문제점을 극복하기 위해 등장한 단위는 바로 rem입니다.
+ *  rem = root em
+ *  HTML 문서의 뿌리(근본)가 되는 요소는? <html>
+ */

@@ -1,0 +1,21 @@
+.product-section {
+  padding-top: 40px;
+}
+
+.product {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.product * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.product img {
+  vertical-align: bottom;
+}
+
+.product .product-category {
+  margin-top: 20px;
+}

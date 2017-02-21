@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/*! banner-rebecca.css © yamoo9.net, 2016 */
+.rebecca {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  height: 660px;
+  background: #ccc;
+}
+
+.rebecca .slide-wrapper {
+  height: 100%;
+}
+
+.rebecca .slide {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+}
+
+.rebecca .slide-content {
+  left: 120px;
+  padding-top: 184px;
+}
+
+.rebecca .slide-content * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rebecca .slide-headline {
+  position: relative;
+  left: -5px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 72px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 1.1111;
+  color: #171717;
+}
+
+.rebecca .slide-desc {
+  margin-top: 15px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #838383;
+}
+
+.rebecca .slide-link {
+  margin-top: 58px;
+  display: inline-block;
+  padding: 1.45em 2.75em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  background: #f95318;
+  color: #fff;
+}
+
+.rebecca .slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.products-group-A {
+  margin-top: 30px;
+  height: 440px;
+  background: #ddd;
+}
+
+.products-group-B {
+  margin-top: 30px;
+  height: 440px;
+  background: #bbb;
+}
+
+.slide-controller {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 50px;
+  width: 42px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.slide-controller button {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.slide-prev-button {
+  margin-bottom: 5px;
+}
+
+.slide-next-button {
+  position: relative;
+  left: -2px;
+  margin-top: 5px;
+}
+
+.display-activation {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #878787;
+}
+
+.active-index {
+  color: #171717;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}

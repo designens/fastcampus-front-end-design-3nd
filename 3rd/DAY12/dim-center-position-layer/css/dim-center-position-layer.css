@@ -1,0 +1,86 @@
+/*! dim-center-position-layer.css Â© yamoo9.net, 2016 */
+
+/* default style */
+body {
+  margin: 0;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  left: 30%;
+  right: 30%;
+  z-index: 1000;
+  background: hsla(0, 0%, 0%, 0.4);
+}
+
+.fixed-menu ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.fixed-menu li {
+  float: left;
+  margin-right: 2em;
+}
+
+.fixed-menu a {
+  display: block;
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 0 10px hsla(0,0%,0%,.25);
+}
+
+/* .dim */
+.dim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: hsla(0, 0%, 0%, 0.6);
+}
+
+/* cats */
+.cat {
+  width: 100%;
+  height: 100vh;
+  background-position: center top;
+  background-size: cover;
+}
+
+/* each control cat */
+.cat-one {
+  background-image: url("../images/output/cat-01.jpg");
+}
+.cat-two {
+  background-image: url("../images/output/cat-02.jpg");
+}
+.cat-three {
+  background-image: url("../images/output/cat-03.jpg");
+}
+.cat-four {
+  background-image: url("../images/output/cat-04.jpg");
+  height: 200vh;
+}
+.cat-five {
+  background-image: url("../images/output/cat-05.jpg");
+  height: 200vh;
+}

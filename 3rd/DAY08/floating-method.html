@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>플로팅 테크닉</title>
+  <link rel="stylesheet" href="../Resources/webfonts/you_and_i_modern/you_and_i_modern.css">
+  <style>
+    html {
+      background: #e9e9e9;
+    }
+    body {
+      margin: 40px;
+      font-family: "YouandiModernTR";
+      font-size: 14px;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+    code {
+      font-family: inherit;
+      color: #4f4f4f;
+    }
+    .parent {
+      background: #fff;
+      margin-bottom: 20px;
+    }
+    .child {
+      width: 220px;
+      height: 100px;
+      line-height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #3f3f3f;
+    }
+    .c1 { background: #fc8583; }
+    .c2 { background: #f1ff70; }
+    .c3 { background: #74eefb; }
+    .c4 { background: #a867fb; }
+
+    .ib { display: inline-block; }
+    .floating {
+      float: right;
+      margin-right: 10px;
+    }
+    .float-right { float: right; }
+    .float-left { float: left; }
+    .clear {clear: both;}
+  </style>
+</head>
+<body>
+
+  <!-- <div>
+    <p><img class="floating" src="http://placehold.it/200x200/000/fff/?text=image" alt="image" width="200" height="200"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores aspernatur iusto optio, totam tempore sapiente harum officiis ab tenetur distinctio libero facilis et quaerat doloremque placeat laborum veritatis? Doloribus tenetur id, reiciendis commodi sed officiis vitae non eos quos libero veritatis distinctio iste suscipit beatae doloremque expedita odio aperiam voluptas!</p>
+  </div> -->
+  <h2><code>display: inline-block</code></h2>
+  <div class="parent">
+    <div class="ib child c1">child box</div>
+    <div class="ib child c2">child box</div>
+    <div class="ib child c3">child box</div>
+    <div class="ib child c4">child box</div>
+  </div>
+
+  <h2><code>floating</code></h2>
+  <div class="parent">
+    <div class="float-left child c1">child box</div>
+    <div class="float-left child c2">child box</div>
+    <div class="float-left child c3">child box</div>
+    <div class="float-left child c4">child box</div>
+  </div>
+
+  <p class="clear">Mujer uno dolor más de, poder mismo si. Cosas autoinmune expedición, a odio consecuencia yugo falda remo marejada mayores paria!</p>
+  <p>Alma autoinmune pócima distinción fuga! Incidente cara, ataque renuncia, animal verdades sapiencia, laudo, ataque mirar asunción libertario cerro repeler alma.</p>
+  <p>Voluble sapiencia asunción soluciones velo síndrome, encefalograma impedimento, montaña repugnante placenta casi repeler tenedor león. Odio torre distinción verdades, escolar.</p>
+  <p>Tonelada paria mínima montaña sintió, pillo voluble deletéreo adiposidad crepúsculo repelente, nascimiento, abogada arquitecto expedición manantial décima. Remo, montaña, ataque?</p>
+  <p>Repelente auto ventana letra fotografía tenedor débito queso. Enigma consecuencia aparte sintió vos perspicacia temporal namibia falda ley ataque pócima.</p>
+  <p>Accesorio y distinción temporalidad entero repeler materialidad odio, tonelada patrón dolor voluble conejo sed cerro abogada arquitecto marejada? Nihilista, aparte?</p>
+  <p>Autoinmune alma dulce culpa afortunado fuga incidente, pan, repeler, en justo distinción deleznable letra? Paciencia laboral, mínima fotografía comodidad ataque.</p>
+  <p>Belleza pan, abogada auto? Arquitecto mínima voluntad falda, almácigo mosca alveolar molde? Volutas alma, manantial namibia temporal queso tonelada ley.</p>
+
+  <!-- <div>
+      <p><img class="floating" src="http://placehold.it/200x200/000/fff/?text=image" alt="image" width="200" height="200"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores aspernatur iusto optio, totam tempore sapiente harum officiis ab tenetur distinctio libero facilis et quaerat doloremque placeat laborum veritatis? Doloribus tenetur id, reiciendis commodi sed officiis vitae non eos quos libero veritatis distinctio iste suscipit beatae doloremque expedita odio aperiam voluptas!</p>
+    </div> -->
+
+</body>
+</html>

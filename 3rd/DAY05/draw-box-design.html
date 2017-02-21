@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>CSS 박스 디자인 (박스 모델)</title>
+  <link rel="stylesheet" href="css/box-design.css">
+  <style>
+    body {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 1200px;
+    }
+    .thumb img {
+      margin-right: 20px;
+      border: 5px solid #ccc;
+      padding: 10px;
+      background-color: #000;
+    }
+    .box-container {
+      margin-top: 40px;
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thumb">
+    <img src="images/thumb-1.jpg" alt="" width="250" height="250">
+    <img src="images/thumb-2.jpg" alt="" width="250" height="250">
+    <img src="images/thumb-3.jpg" alt="" width="250" height="250">
+  </div>
+
+  <!-- 의미는 없지만, 포토샵의 그룹 레이어처럼 사용되는 묶어주는 요소 -->
+  <!-- <div> division (구역, 영역) -->
+
+  <div class="box-container">
+    <div class="box blue-box">#75c9e2</div>
+    <div class="box green-box">#75e2aa</div>
+    <div class="box deepblue-box">#75a4e2</div>
+    <div class="box yellow-box">#fada13</div>
+    <div class="box pink-box">#f49db6</div>
+  </div>
+
+</body>
+</html>

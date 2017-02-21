@@ -1,0 +1,95 @@
+/* rem은 root em */
+html {
+  /*font-size: 16px;*/
+  font-size: 10px; /* 계산을 용이하게 하기 위함 */
+}
+
+/* 브라우저 기본 스타일 초기화 */
+body {
+  margin: 0;
+}
+
+/* 사용자 정의 스타일 오버라이딩(덮어쓰기) */
+/* Design = 설계 */
+
+/* 본문 설계(Design)
+ * 글자 크기 16px
+ * 행간 비율 1.5
+ **/
+body {
+  font-family: "Spoqa Han Sans", Dotum, Gulim, Sans-Serif;
+  /* 글자 크기 */
+  font-size: 1.6rem;
+  /* 글자 줄 사이 간격 */
+  line-height: 2.4rem; /* 24px */
+  /* 글자 사이 간격 */
+  letter-spacing: -0.04em;
+  /* 글자 색상 */
+  color: #121003;
+  /* Leading 배경 패턴 */
+  /*background: url("../../DAY03/images/leading-24.png");*/
+}
+
+/* 단락 설계 */
+p {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+}
+
+/* 제목 설계
+ * 타입 배율 x1.25
+ **/
+h6 {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  font-size: 2.5rem;
+  line-height: 4.8rem;
+  font-weight: 200;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  font-size: 3.125rem;
+  line-height: 4.8rem;
+  font-weight: 200;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  font-size: 3.90625rem;
+  line-height: 4.8rem;
+  font-weight: 200;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  font-size: 4.8828125rem;
+  line-height: 7.2rem;
+  font-weight: 200;
+}
+
+/* 레이아웃 설계 */
+body {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,10 @@
+.box {
+  height: 100px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 10px;
+}

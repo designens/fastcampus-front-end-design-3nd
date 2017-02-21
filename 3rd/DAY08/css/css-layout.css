@@ -1,0 +1,114 @@
+/*! css-layout.css © yamoo9.net, 2016 */
+/*
+
+HTML 요소
+
+- 블록 요소
+  - 가로 폭: 자신을 포함하는 부모 요소
+  - 세로 폭: 자신이 포함하는 자식 요소
+  - width, height, margin 모두 적용 가능
+  - 가로 방향 정렬(text-align)은 가능
+  - 세로 방향 정렬(vertical-align)이 가능하지 않음
+
+- 인라인 요소
+  - 가로/세로 폭: 자신이 포함하는 콘텐츠 만큼 할당
+  - width, height, margin(padding)-top, margin(padding)-bottom 적용 안됨
+  - 가로 방향 정렬이 가능하지 않음
+  - 세로 방향 정렬(vertical-align)은 가능
+
+CSS 박스 모델
+
+콘텐츠 박스
+패딩 박스
+보더 박스
+마진 박스
+
+ */
+
+/*body {
+  margin: 100px;
+}*/
+
+/*.box {
+  width: 200px;
+  height: 400px;
+  background: #000;
+  color: #fff;
+}*/
+/*.box {
+  min-width: 480px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+}*/
+
+body {
+  margin: 0;
+}
+
+.page-header {
+  height: 20vh;
+  background: #fff;
+  color: #232323;
+  text-align: center;
+  line-height: 20vh;
+}
+
+.page-header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-header a {
+  display: block;
+}
+
+.page-header img {
+  vertical-align: middle;
+}
+
+.page-main {
+  height: 80vh;
+  background: #fc414b;
+  text-align: center;
+  /*line-height: 80vh;*/
+}
+
+.page-main .column {
+  display: inline-block;
+  margin-top: 7vh;
+  margin-bottom: 10px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 20vw;
+  min-height: 60vh;
+  background: #131313;
+  color: #fff;
+  line-height: 60vh;
+}
+
+.page-footer {
+  height: 15vh;
+  background: #64131b;
+  color: #fff;
+  text-align: center;
+  line-height: 15vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

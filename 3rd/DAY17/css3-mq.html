@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>CSS3 미디어쿼리 디자인</title>
+  <link rel="stylesheet" href="./css3-mq.css">
+  <style>
+    .container {
+      height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: 540px) {
+      .container { width: 95%; }
+    }
+    @media screen and (min-width: 920px) {
+      .container { max-width: 1100px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container show-grid"></div>
+
+  <!-- <div class="demo">
+    <h1>RWD</h1>
+    <p>Responsive Web Design</p>
+  </div> -->
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+.box { background: #ff0; }
+.my-way {
+  background: #6645cf;
+  height: 200px;
+}
+.my-way .col-2 {
+  /*height: 180px;*/
+}
+
+
+.two-girls {
+  padding-top: 61.5384%; /* 720/1170*100 */
+  background-image: url("../images/photo.jpg");
+}
+.shoes {
+  padding-top: 39.4915%; /* 233/590*100 */
+  background-image: url("../images/shoes.jpg");
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min--moz-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx)
+{
+  .two-girls {
+    background-image: url("../images/photo@2x.jpg");
+  }
+  .shoes {
+    background-image: url("../images/shoes@2x.jpg");
+  }
+}
+
+
+/**
+ * --------------------------------
+ * big-header
+ * ----------------------------- */
+.big-header {
+  position: relative;
+  height: 920px;
+  background-position: center top;
+  background-size: cover;
+}
+.big-header .headline {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 200;
+  font-size: 54px;
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+.cagle {
+  background-image: url("../images/brooke-cagle-1327.jpg");
+}
+
+.meyer {
+  background-image: url("../images/aidan-meyer-1404.jpg");
+}
+
+.meyer .headline {
+  top: 50px;
+  color: #61402a;
+  text-shadow: none;
+}

@@ -1,0 +1,33 @@
+/* 브라우저 스타일 초기화 */
+body {
+  /* 가운데 정렬 */
+  width: 960px;
+  /* width 값을 뺀 나머지 공간을 좌우로 나눈다. */
+  margin: 0 auto;
+  /* 래딩(Leading) 간격을 패턴으로 배경이미지로 그림 */
+  background: url("../images/leading-24.png");
+  /* 글자 모양(글꼴) */
+  font-family: "Spoqa Han Sans";
+  /* 행간 line height */
+  line-height: 1.5; /* x1.5 */
+  /* 글자 사이 간격 letter spacing */
+  letter-spacing: -0.04em;
+}
+
+/* 멀티 컬럼 디자인 */
+div {
+  margin-top: 9em;
+  column-count: 2;
+  column-gap: 3em;
+}
+
+/* 단락(Paragraph) 디자인 */
+p {
+  /*단락 사이 간격 설정*/
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  /* 글자 색상 */
+  color: #454545;
+}
+
+

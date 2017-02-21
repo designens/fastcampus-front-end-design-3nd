@@ -1,0 +1,38 @@
+/*블록 요소의 특징
+  가로 폭은 별도의 설정이 없다면 자신을 포함하는 상위 요소의 가로 폭만큼 늘어난다.
+  세로 폭은 자신이 포함하는 하위 콘텐츠 만큼 늘어난다.*/
+
+/*인라인 요소의 특징
+  가로, 세로 폭 설정이 불가능하다. 자신이 포함하는 콘텐츠만큼만 박스 크기가 생성된다.
+  위/아래 방향으로는 공간 적용이 되지 않는다.*/
+
+/*인라인 블록 요소의 특징
+  기본적으로는 인라인 요소처럼 동작하지만, 가로, 세로 폭 설정이 가능하다. (블록의 특징도 가짐)
+  위/아래 방향으로 공간 적용이 가능하다. 하지만 수평 방향으로 나열된 박스 사이에는 알 수없는
+  공간이 생성되는 문제를 수반한다. 무엇보다 IE 6,7에서 정상 작동하지 않는다.*/
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+}
+
+.blue-box     {
+  background: #75c9e2;
+}
+.green-box    {
+  background: #75e2aa;
+}
+.deepblue-box {
+  background: #75a4e2;
+}
+.yellow-box   {
+  background: #fada13;
+}
+.pink-box     {
+  background: #f49db6;
+}

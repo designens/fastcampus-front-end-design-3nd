@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>반응형 웹 디자인을 위한 그리드 시스템 구축</title>
+  <!-- CDN: FontAwesome -->
+  <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet">
+  <!-- 모듈 디자인: 재사용 -->
+  <link rel="stylesheet" href="css/common/normalize.min.css">
+  <link rel="stylesheet" href="css/common/utils.css">
+  <link rel="stylesheet" href="css/rwd/utils.css">
+  <link rel="stylesheet" href="css/rwd/fluid.css">
+  <style>
+    html {
+      font-size: 10px;
+    }
+    body {
+      font-size: 1.6rem;
+    }
+    .brand {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 1.4rem 0;
+    }
+    .brand a {
+      text-decoration: none;
+      color: #25a04d;
+    }
+    .toggle-menu {
+      float: right;
+      border: 1px solid currentColor;
+      margin-top: 0.9rem;
+      padding: 1rem 1.3rem;
+      background: #fff;
+      color: #25a04d;
+    }
+    .toggle-menu.opened {
+      background: #def6e4;
+    }
+    .toggle-menu.opened + .gnb {
+      display: block;
+    }
+    .gnb {
+      display: none;
+      position: absolute;
+      top: 6rem;
+      left: 0;
+      width: 100vw;
+      background: #25a04d;
+    }
+    .gnb a {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+    }
+    .gnb a:hover,
+    .gnb a:focus {
+      background: #207660;
+    }
+  </style>
+  <!-- 모바일 최적화 meta:vp -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="leading-10 show-grid">
+
+  <div class="container columns-4">
+    <header role="banner" class="row gutters">
+      <div class="col col--1-2">
+        <h1 class="brand"><a href="/">Fingo</a></h1>
+      </div>
+      <div class="col col--1-4 offset--1-4">
+        <button type="button" class="opened toggle-menu reset-button" aria-label="Toggle Global Menu">
+          <span class="fa fa-navicon" aria-hidden="true"></span>
+        </button>
+        <nav class="gnb">
+          <ul>
+            <li><a href="">menu 1</a></li>
+            <li><a href="">menu 2</a></li>
+            <li><a href="">menu 3</a></li>
+            <li><a href="">menu 4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  </div>
+
+</body>
+</html>

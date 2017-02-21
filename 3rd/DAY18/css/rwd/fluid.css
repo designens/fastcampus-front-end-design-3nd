@@ -1,0 +1,259 @@
+/*! rwd/fluid.css © yamoo9.net, 2016 */
+
+/**
+ * ------------------------------------
+ * container module
+ * ------------------------------------ */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+/**
+ * --------------------------------
+ * show-grid module
+ * ----------------------------- */
+[class*="show-grid"] {
+  min-height: 100vh;
+}
+.leading-10 {
+  background: linear-gradient(transparent 9px, #bbb 9px);
+  background-size: 1px 10px;
+}
+.leading-21 {
+  background: linear-gradient(transparent 20px, #bbb 20px);
+  background-size: 1px 21px;
+}
+.leading-24 {
+  background: linear-gradient(transparent 23px, #bbb 23px);
+  background-size: 1px 24px;
+}
+[class*="show-grid"] .container {
+  position: relative;
+  min-height: inherit;
+}
+[class*="show-grid"] .container::before {
+  content: '';
+  position: absolute;
+  z-index: 10000;
+  opacity: 0.45;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.container.columns-4::before {
+  background-image: linear-gradient(to right, #fdafad 50%, #fa797a 50%);
+  background-size: 50% 1px;
+}
+.container.columns-8::before {
+  background-image: linear-gradient(to right, #fdafad 50%, #fa797a 50%);
+  background-size: 25% 1px;
+}
+.container.columns-12::before {
+  background-image: linear-gradient(to right, #fdafad 50%, #fa797a 50%);
+  background-size: 16.66667% 1px;
+}
+/**
+ * ------------------------------------
+ * row(grid) module
+ * ------------------------------------ */
+.row:after,
+.row::after,
+.grid:after,
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/**
+ * ------------------------------------
+ * column(cell) module
+ * Naming Guide (like BEM)
+ * e.g) .header__navigation--secondary
+ * ------------------------------------ */
+.col,
+.cell {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+}
+
+.col--1-2,
+.col--2-4,
+.col--3-6,
+.col--4-8,
+.col--5-10,
+.col--6-12  { width: 50%; }
+.col--1-3,
+.col--2-6,
+.col--3-9,
+.col--4-12  { width: 33.3333%; }
+.col--2-3,
+.col--4-6,
+.col--6-9,
+.col--8-12  { width: 66.6666%; }
+.col--1-4,
+.col--2-8,
+.col--3-12  { width: 25%; }
+.col--3-4,
+.col--6-8,
+.col--9-12  { width: 75%; }
+.col--1-5,
+.col--2-10  { width: 20%; }
+.col--2-5,
+.col--4-10  { width: 40%; }
+.col--3-5,
+.col--6-10  { width: 60%; }
+.col--4-5,
+.col--8-10  { width: 80%; }
+.col--1-6,
+.col--2-12  { width: 16.6666%; }
+.col--5-6   { width: 83.3333%; }
+.col--1-7   { width: 14.2857%; }
+.col--2-7   { width: 28.5714%; }
+.col--3-7   { width: 42.8571%; }
+.col--4-7   { width: 57.1428%; }
+.col--5-7   { width: 71.4285%; }
+.col--6-7   { width: 85.7142%; }
+.col--1-8   { width: 12.5%; }
+.col--3-8   { width: 37.5%; }
+.col--5-8   { width: 62.5%; }
+.col--7-8   { width: 87.5%; }
+.col--1-9   { width: 11.1111%; }
+.col--2-9   { width: 22.2222%; }
+.col--3-9   { width: 22.2222%; }
+.col--4-9   { width: 44.4444%; }
+.col--5-9   { width: 55.5555%; }
+.col--7-9   { width: 77.7777%; }
+.col--8-9   { width: 88.8888%; }
+.col--1-10  { width: 10%; }
+.col--2-10  { width: 20%; }
+.col--3-10  { width: 30%; }
+.col--5-10  { width: 30%; }
+.col--7-10  { width: 70%; }
+.col--9-10  { width: 90%; }
+.col--1-11  { width: 9.0909%; }
+.col--2-11  { width: 18.1818%; }
+.col--3-11  { width: 27.2727%; }
+.col--4-11  { width: 36.3636%; }
+.col--5-11  { width: 45.4545%; }
+.col--6-11  { width: 54.5454%; }
+.col--7-11  { width: 63.6363%; }
+.col--8-11  { width: 72.7272%; }
+.col--9-11  { width: 81.8181%; }
+.col--10-11 { width: 90.9090%; }
+.col--1-12  { width: 8.3333%; }
+.col--2-12  { width: 8.3333%; }
+.col--5-12  { width: 41.6666%; }
+.col--7-12  { width: 58.3333%; }
+.col--10-12 { width: 83.3333%; }
+.col--11-12 { width: 91.6666%; }
+
+/**
+ * --------------------------------
+ * gutter module
+ * px, rem, em 등 사용 가능
+ * ----------------------------- */
+.row.gutters .col,
+.gutters {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.row.gutter-before .col,
+.gutter-before {
+  padding-left: 2em;
+}
+.row.gutter-before .col.first {
+  padding-left: 0;
+}
+.row.gutter-after .col,
+.gutter-after {
+  padding-right: 2em;
+}
+.row.gutter-after .col.last {
+  padding-right: 0;
+}
+.row.gutters,
+.row.gutter-before,
+.row.gutter-after,
+.container .row .no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/**
+ * --------------------------------
+ * offset module
+ * prefix(margin-left),
+ * suffix(margin-right)
+ * ----------------------------- */
+.offset--1-2,
+.offset--2-4,
+.offset--3-6,
+.offset--4-8,
+.offset--5-10,
+.offset--6-12  { margin-left: 50%; }
+.offset--1-3,
+.offset--2-6,
+.offset--3-9,
+.offset--4-12  { margin-left: 33.3333%; }
+.offset--2-3,
+.offset--4-6,
+.offset--6-9,
+.offset--8-12  { margin-left: 66.6666%; }
+.offset--1-4,
+.offset--2-8,
+.offset--3-12  { margin-left: 25%; }
+.offset--3-4,
+.offset--6-8,
+.offset--9-12  { margin-left: 75%; }
+.offset--1-5,
+.offset--2-10  { margin-left: 20%; }
+.offset--2-5,
+.offset--4-10  { margin-left: 40%; }
+.offset--3-5,
+.offset--6-10  { margin-left: 60%; }
+.offset--4-5,
+.offset--8-10  { margin-left: 80%; }
+.offset--1-6,
+.offset--2-12  { margin-left: 16.6666%; }
+.offset--5-6   { margin-left: 83.3333%; }
+.offset--1-7   { margin-left: 14.2857%; }
+.offset--2-7   { margin-left: 28.5714%; }
+.offset--3-7   { margin-left: 42.8571%; }
+.offset--4-7   { margin-left: 57.1428%; }
+.offset--5-7   { margin-left: 71.4285%; }
+.offset--6-7   { margin-left: 85.7142%; }
+.offset--1-8   { margin-left: 12.5%; }
+.offset--3-8   { margin-left: 37.5%; }
+.offset--5-8   { margin-left: 62.5%; }
+.offset--7-8   { margin-left: 87.5%; }
+.offset--1-9   { margin-left: 11.1111%; }
+.offset--2-9   { margin-left: 22.2222%; }
+.offset--3-9   { margin-left: 22.2222%; }
+.offset--4-9   { margin-left: 44.4444%; }
+.offset--5-9   { margin-left: 55.5555%; }
+.offset--7-9   { margin-left: 77.7777%; }
+.offset--8-9   { margin-left: 88.8888%; }
+.offset--1-10  { margin-left: 10%; }
+.offset--2-10  { margin-left: 20%; }
+.offset--3-10  { margin-left: 30%; }
+.offset--5-10  { margin-left: 30%; }
+.offset--7-10  { margin-left: 70%; }
+.offset--9-10  { margin-left: 90%; }
+.offset--1-11  { margin-left: 9.0909%; }
+.offset--2-11  { margin-left: 18.1818%; }
+.offset--3-11  { margin-left: 27.2727%; }
+.offset--4-11  { margin-left: 36.3636%; }
+.offset--5-11  { margin-left: 45.4545%; }
+.offset--6-11  { margin-left: 54.5454%; }
+.offset--7-11  { margin-left: 63.6363%; }
+.offset--8-11  { margin-left: 72.7272%; }
+.offset--9-11  { margin-left: 81.8181%; }
+.offset--10-11 { margin-left: 90.9090%; }
+.offset--1-12  { margin-left: 8.3333%; }
+.offset--2-12  { margin-left: 8.3333%; }
+.offset--5-12  { margin-left: 41.6666%; }
+.offset--7-12  { margin-left: 58.3333%; }
+.offset--10-12 { margin-left: 83.3333%; }
+.offset--11-12 { margin-left: 91.6666%; }

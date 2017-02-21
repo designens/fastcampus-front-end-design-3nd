@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>RWD: 정적인(고정) → 유연한 레이아웃 테크닉</title>
+  <!-- 모바일 우선 적용: 모바일 최적화 -->
+  <!-- meta:vp -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/GS__1200-15-8-15.css">
+  <style>
+    html {overflow-y: scroll;}
+    body {margin: 0; font-family: Lato;}
+    .box {height: 100px;line-height: 100px;background: #000;color: #fff;text-align: center;}
+    .box-red {background: #800;}
+    .box-blue {background: #009;}
+  </style>
+</head>
+<body class="show-grid">
+
+  <div class="container fluid">
+    <div class="row">
+      <div class="col-8 box">
+        <div class="col-3 box box-red"></div>
+        <div class="col-2 box box-blue"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="js/toggleGrid.js"></script>
+</body>
+</html>
